@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>H.S Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>About Hamza</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="banner">
+            <h1>About Me!</h1>
+        </div>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+        <div id="information">
+            <video id="myvid" width="400" height="240" controls poster="videoposterIMG4.jpg" 
+            preload="auto" autoplay muted loop>
+                <source src="aboutmevideo.mp4" type="video/mp4">
+            </video> 
+            <br>              
+            <button onclick="PlayPause()">Play/Pause</button>
+            <script>
+                var myvidbtn = document.getElementById("myvid");
+                function PlayPause()
+                {
+                    if(myvidbtn.paused)
+                        myvidbtn.play();
+                    else
+                        myvidbtn.pause();
+                }
+            </script>
+
+            <br> 
+            
+            
+            <img src="HamzaIMG1.jpg" alt="Picture of Hamza" width="400" height="500">
+
+            <h3>Hello Everyone! My Name is Hamza Siddiqui and I am a third year studnet at Ontario Tech University, studying Technology Management!
+                I enjoy learning about computers so this is why I chose Technology Mangement as it gives a side of both buisness and the tech world.
+            </h3>
+        
+
+            <img src="SoccerIMG3.jpg" alt="Soccer Picture" width="400" height="500">
+            <h3>Some of my hobbies consist of playing sports such as soccer. Soccer is one of my favourite sports.</h3>
+            <h4>Although this is a Madrid jersey... I'm a big fan of Barcelona "Més que un Club!"</h4>
+
+
+            <img src="CarIMG2.jpg" alt="Picture of my Car" width="400" height="600">
+            <h3>I also enjoy driving! I have my own car so I enjoy going on drives alone or with my friends.</h3>
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            <h4>Ⓒ 2024 By Hamza Siddiqui. All Rights Reserved.</h4>
+            <h4>Contat Me: hamza.siddiqui1@ontariotechu.net</h4>
+        </div>
+</body>
+</html>
